@@ -6,6 +6,7 @@ class Game{
   public static void main(String [] args)throws InterruptedException{
     
     System.out.println("Hello there you find yourself in a dark space, the walls are close to you ");
+    TimeUnit.SECONDS.sleep(3);
     System.out.println("The ceiling is mere inches above your head , something feels wrong about this place");
     TimeUnit.SECONDS.sleep(3);
     System.out.println("You peer through the darkness it's hard to see but you think you may be in ........ ");
@@ -40,37 +41,51 @@ class Game{
     
     switch(firstChoice){
       case 0: System.out.println(" Your reach for your back pocket ..... ");
+      TimeUnit.SECONDS.sleep(2);
       break;
       
       case 1: System.out.println(" Your reach for your shirt pocket.....  ");
+      TimeUnit.SECONDS.sleep(2);
       break;
       
       case 2: System.out.println(" Your reach in your right pocket.....  ");
+      TimeUnit.SECONDS.sleep(2);
       break;
       
       case 3: System.out.println(" Your reach for your inside jacket pocket....  ");
+      TimeUnit.SECONDS.sleep(2);
       break;
       
     }
+    
+    int SecondChoice;
+    
     TimeUnit.SECONDS.sleep(3);
     if(firstChoice == 0){
     System.out.println("Fumbling around in your pocket you feel the cool smooth surface of you trusty Zippo , you spark it up and peer through the darkness for the first time ..... ");
-  
+    SecondChoice = 0;
     }
     else if(firstChoice == 1){
       System.out.println("Fumbling around in your pocket you grab a match , you spark it up and peer through the darkness for the first time ..... ");
-      
+      SecondChoice =1;
     }
     
     else if(firstChoice == 2){
       System.out.println("Fumbling around in your pocket and grab peice of flint and a rag , you spark it up and peer through the darkness for the first time ..... ");
-      
+      SecondChoice = 2;
     }
     else{
       System.out.println("Fumbling around in your pocket you find a lighter, you spark it up and peer through the darkness for the first time ..... ");
+      SecondChoice = 3;
     }
+    TimeUnit.SECONDS.sleep(3);
+    
+    switch(SecondChoice){
+      case 0:
+      System.out.println(" A huge balck cat stares at you through the darkness, it eyes glowing in the light!!!");
+      break;
     }
     
-    
+  }
  
 }
